@@ -10,3 +10,7 @@ function solve(s){
 var numbers = s.match(/\d+/g).map(Number);
 return Math.max.apply(null, numbers)
 };
+
+____________________________________________________________
+чужой ответ 
+return Math.max(...s.match(/\d+/g));
