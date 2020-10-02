@@ -1,0 +1,30 @@
+function repeats(arr){
+
+arr.sort();
+
+var data = [];
+for (var i = 0; i < arr.length; i++)
+{
+var number = arr[i];
+if (data[number] == undefined)
+{
+data[number] = 0;
+}
+data[number]++;
+}
+var result = [];
+for (var i = 0; i < arr.length; i++)
+{
+var number = arr[i];
+if (data[number] == 1)
+{
+result.push(number);
+}
+}
+sum =0;
+for(var i = 0; i < result.length; i++){
+sum = sum + result[i];
+}
+
+return sum
+};
